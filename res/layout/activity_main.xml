@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="127dp"
+        android:layout_toRightOf="@+id/btnMul"
+        android:onClick="sub"
+        android:text="Sub" />
+
+    <Button
+        android:id="@+id/btnClr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtNum1"
+        android:layout_marginRight="16dp"
+        android:onClick="clr"
+        android:text="Clear" />
+
+    <Button
+        android:id="@+id/btnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/btnClr"
+        android:onClick="div"
+        android:text="Div" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnExt"
+        android:layout_alignRight="@+id/btnMul"
+        android:onClick="add"
+        android:text="Add" />
+
+    <Button
+        android:id="@+id/btnMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/btnClr"
+        android:onClick="mul"
+        android:text="Mul" />
+
+    <Button
+        android:id="@+id/btnExt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtNum1"
+        android:layout_alignParentBottom="true"
+        android:onClick="ext"
+        android:text="exit" />
+
+    <EditText
+        android:id="@+id/txtNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Num1"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/txtAns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btnMul"
+        android:layout_below="@+id/btnClr"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Answer"
+        android:linksClickable="false" />
+
+    <EditText
+        android:id="@+id/txtNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txtAns"
+        android:layout_alignLeft="@+id/txtAns"
+        android:ems="10"
+        android:hint="Num2"
+        android:inputType="numberDecimal" />
+
+</RelativeLayout>
